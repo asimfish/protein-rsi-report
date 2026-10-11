@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1000" viewBox="0 0 1320 1000" role="img" aria-labelledby="title desc">
+<title id="title">可修改的改进程序及独立能力评价</title>
+<desc id="desc">下一版待实现方法。A，改进程序检索已完成匿名记录，选择父代并提出策略程序，固定核心回放和筛选后追加实测记录。B，同一改进程序修改自身检索、提案或父代选择程序，由嵌套子搜索的能力效用评价，选定子代继续修改。C，冻结新旧改进程序，重置为同一任务策略和空经验，用相同预算搜索并在未参与元开发的任务上比较部署收益。</desc>
+<defs>
+ <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8Z" fill="#334955"/></marker>
+ <marker id="gold" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8Z" fill="#9a712d"/></marker>
+ <style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#203644}.title{font-size:28px;font-weight:700}.sub{font-size:16px;fill:#5f7077}.panel{fill:#fff;stroke:#dce3e3;stroke-width:1.5}.label{font-size:19px;font-weight:700}.small{font-size:15px;fill:#52666e}.node{font-size:20px;font-weight:600}.body{font-size:16px}.math{font-size:19px;font-family:"Cambria Math",serif}.flow{fill:none;stroke:#334955;stroke-width:2;marker-end:url(#arr)}.meta-flow{fill:none;stroke:#9a712d;stroke-width:2;marker-end:url(#gold)}.editable{fill:#edf5f1;stroke:#27785f;stroke-width:1.8}.fixed{fill:#f1f4f6;stroke:#a6b7c0;stroke-width:1.5}.meta{fill:#faf4e9;stroke:#ae8540;stroke-width:1.8}.badge{font-size:15px;font-weight:600;fill:#8c682d}</style>
+</defs>
+<rect width="1320" height="1000" fill="#f8f8f4"/>
+<text x="42" y="49" class="title">学习实验策略，也检验改进策略的程序是否变强</text>
+<text x="42" y="80" class="sub">固定 Qwen 权重 · 可修改程序 · 实测科学反馈 · 同起点与同预算评价</text>
+<rect x="1075" y="31" width="203" height="34" rx="17" fill="#faf4e9" stroke="#c3a068"/>
+<text x="1101" y="54" class="badge">下一版设计 · 待实现</text>
+
+<rect class="panel" x="32" y="110" width="1256" height="333" rx="14"/>
+<text x="55" y="145" class="label">A  策略搜索：把完成的实验转化为下一次修改</text>
+<rect x="60" y="184" width="280" height="155" rx="10" fill="#fff" stroke="#b2c1bd"/>
+<text x="82" y="216" class="node">已完成的匿名经验 H</text>
+<text x="82" y="249" class="body">条件 · 父代 · 修改 · 实测差值</text>
+<text x="82" y="276" class="body">行为变化 · 失败类型 · 费用</text>
+<text x="82" y="311" class="small">正负结果都保留；不含序列标签</text>
+<rect class="editable" x="410" y="177" width="382" height="171" rx="10"/>
+<text x="432" y="210" class="node">改进程序 Iφ</text>
+<text x="432" y="244" class="body">R  检索与当前条件相关的经验</text>
+<text x="432" y="274" class="body">P  选择父代与修改顺序</text>
+<text x="432" y="304" class="body">G  调用固定模型生成代码修改</text>
+<path class="flow" d="M340 261 H410"/>
+<rect class="editable" x="888" y="188" width="319" height="75" rx="10"/>
+<text x="912" y="220" class="node">候选策略程序 π′</text>
+<text x="912" y="246" class="small">由程序实际选择查询批次</text>
+<path class="flow" d="M792 225 H888"/>
+<rect class="fixed" x="888" y="290" width="319" height="74" rx="10"/>
+<text x="912" y="321" class="node">固定回放与筛选</text>
+<text x="912" y="347" class="small">配对起点 · 32 + 8 × 16 · nAUBC</text>
+<path class="flow" d="M1048 263 V290"/>
+<path class="flow" d="M1048 364 V398 H200 V339"/>
+<rect x="468" y="384" width="368" height="27" fill="#fff"/>
+<text x="484" y="404" class="small">实测记录追加；接受与拒绝都留下证据</text>
+
+<rect class="panel" x="32" y="463" width="1256" height="223" rx="14"/>
+<text x="55" y="498" class="label">B  程序自修改：候选子代必须在新的子搜索中接受评价</text>
+<rect class="editable" x="60" y="527" width="270" height="94" rx="10"/>
+<text x="82" y="560" class="node">Iφ 以自身代码为对象</text>
+<text x="82" y="591" class="small">合法元经验 + 固定模型</text>
+<rect class="meta" x="422" y="527" width="278" height="94" rx="10"/>
+<text x="444" y="560" class="node">候选改进程序 Iφ′</text>
+<text x="444" y="591" class="small">只改变 R / G / P 中一个模块</text>
+<path class="meta-flow" d="M330 574 H422"/>
+<rect class="fixed" x="794" y="527" width="413" height="94" rx="10"/>
+<text x="816" y="560" class="node">嵌套能力评价 Umeta</text>
+<text x="816" y="591" class="small">重置 π₀ · 子搜索 · 选策略 · 新起点评分</text>
+<path class="meta-flow" d="M700 574 H794"/>
+<path class="meta-flow" d="M1000 621 V656 H195 V621"/>
+<rect x="381" y="642" width="430" height="27" fill="#fff"/>
+<text x="397" y="662" class="small">元开发选定子代；下一轮由子代继续修改自身</text>
+
+<rect class="panel" x="32" y="706" width="1256" height="215" rx="14"/>
+<text x="55" y="742" class="label">C  独立确认：排除更好起点、更多记忆和更多预算的影响</text>
+<rect class="fixed" x="60" y="770" width="275" height="93" rx="10"/>
+<text x="82" y="803" class="node">冻结 Iφ₀ 与 Iφnew</text>
+<text x="82" y="834" class="small">相同 π₀、H₀，K = 20</text>
+<rect class="fixed" x="414" y="770" width="310" height="93" rx="10"/>
+<text x="436" y="803" class="node">各自选定部署策略</text>
+<text x="436" y="834" class="small">同逐项预算 · 每方法五条链</text>
+<path class="flow" d="M335 816 H414"/>
+<rect class="fixed" x="804" y="770" width="403" height="93" rx="10"/>
+<text x="826" y="803" class="node">未参与元开发的任务与起点</text>
+<text x="826" y="834" class="math">ΔQ = Q(Iφnew) − Q(Iφ₀)</text>
+<path class="flow" d="M724 816 H804"/>
+<text x="60" y="895" class="small">测试反馈不回流 · 所有链都报告 · 区间与总费用单列 · 元开发的“子搜索确认”不算最终测试</text>
+
+<rect x="42" y="948" width="18" height="18" rx="3" class="editable"/>
+<text x="70" y="963" class="small">可修改程序</text>
+<rect x="219" y="948" width="18" height="18" rx="3" class="meta"/>
+<text x="247" y="963" class="small">自修改候选与元开发</text>
+<rect x="456" y="948" width="18" height="18" rx="3" class="fixed"/>
+<text x="484" y="963" class="small">固定权限、工具、预算与评价</text>
+<text x="810" y="963" class="small">仅转移改进程序；不继承跨回放标签缓存</text>
+</svg>
