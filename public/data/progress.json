@@ -1,24 +1,24 @@
 {
   "schema_version": 1,
-  "generated_utc": "2026-10-11T05:58:28.309964+00:00",
-  "source_updated_utc": "2026-10-10T01:46:37.789048+00:00",
-  "study_version": "online-system-4",
+  "generated_utc": "2026-10-11T07:36:33.420479+00:00",
+  "study_version": "online-system-6",
+  "source_updated_utc": "2026-10-11T07:36:13.008151+00:00",
   "counts": {
-    "episodes_started": 1036,
-    "episodes_completed": 1035,
+    "episodes_started": 5,
+    "episodes_completed": 4,
     "episodes_failed": 0,
-    "known_label_queries": 165680,
-    "recorded_model_requests": 4955,
-    "model_responses_completed": 4940,
-    "model_attempts_failed": 14,
+    "known_label_queries": 784,
+    "recorded_model_requests": 41,
+    "model_responses_completed": 27,
+    "model_attempts_failed": 13,
     "model_attempts_unsettled": 1
   },
-  "scientific_support": false,
   "execution": {
-    "active": false,
-    "checked_utc": "2026-10-11T05:58:28.309964+00:00",
-    "note": "本机未发现正在运行的正式研究进程；队列running是旧状态。未完成回放与未知请求消费保留，不能直接重启替补。"
+    "active": true,
+    "checked_utc": "2026-10-11T07:36:33.420479+00:00",
+    "note": "本机研究进程已核验；当前阶段：工程检查（5次试运行）。完整性能评价尚未完成。 计数含一次独立记录的无标签连接检查，其响应不进入科研历史。"
   },
+  "scientific_support": false,
   "log": [
     {
       "date": "2026-10-08",
@@ -34,7 +34,11 @@
     },
     {
       "date": "2026-10-11",
-      "text": "本机核验发现研究进程已停止，磁盘有一个未完成回放。独立恢复诊断进行中；当前尚无正式性能优势。"
+      "text": "v4中断保留165680标签/4955尝试，v5网络失败保留304标签/16尝试；各有1无终态请求，旧消费不覆盖。"
+    },
+    {
+      "date": "2026-10-11",
+      "text": "v6隔离修复显式连接和工程验收条件；原型真实匿名调用HTTP200、模型名与JSON正确，1请求/66token/0生物查询，另列成本。当前尚无正式性能优势。"
     }
   ]
 }
