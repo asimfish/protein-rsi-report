@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-11T05:58:28.309964+00:00",
+  "source_updated_utc": "2026-10-10T01:46:37.789048+00:00",
+  "study_version": "online-system-4",
+  "counts": {
+    "episodes_started": 1036,
+    "episodes_completed": 1035,
+    "episodes_failed": 0,
+    "known_label_queries": 165680,
+    "recorded_model_requests": 4955,
+    "model_responses_completed": 4940,
+    "model_attempts_failed": 14,
+    "model_attempts_unsettled": 1
+  },
+  "scientific_support": false,
+  "execution": {
+    "active": false,
+    "checked_utc": "2026-10-11T05:58:28.309964+00:00",
+    "note": "本机未发现正在运行的正式研究进程；队列running是旧状态。未完成回放与未知请求消费保留，不能直接重启替补。"
+  },
+  "log": [
+    {
+      "date": "2026-10-08",
+      "text": "v17全部6160回放和v18全部1668回放完成；预定优势均未建立。完整负结果保留。"
+    },
+    {
+      "date": "2026-10-09",
+      "text": "完整在线系统v4登记并启动；完成工程检查与53配置×10初始化的固定方法开发。"
+    },
+    {
+      "date": "2026-10-10",
+      "text": "决策响应长度校验问题在隔离原型修正，独立工程评审与NEWfresh通过；未接入正式研究。"
+    },
+    {
+      "date": "2026-10-11",
+      "text": "本机核验发现研究进程已停止，磁盘有一个未完成回放。独立恢复诊断进行中；当前尚无正式性能优势。"
+    }
+  ]
+}

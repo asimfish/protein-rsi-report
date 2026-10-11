@@ -1,0 +1,502 @@
+{
+  "v17": {
+    "methods": [
+      {
+        "id": "random",
+        "initializations": 50,
+        "chains": null,
+        "nAUBC": 0.2854357294839584,
+        "best_at_160": 3.19522098698
+      },
+      {
+        "id": "mlp5_greedy",
+        "initializations": 50,
+        "chains": null,
+        "nAUBC": 0.6071417038143033,
+        "best_at_160": 7.04087491898
+      },
+      {
+        "id": "initial",
+        "initializations": 50,
+        "chains": null,
+        "nAUBC": 0.6174108289113511,
+        "best_at_160": 7.110035530539999
+      },
+      {
+        "id": "mlp5_thompson",
+        "initializations": 50,
+        "chains": null,
+        "nAUBC": 0.6099653395510011,
+        "best_at_160": 6.97313934206
+      },
+      {
+        "id": "uniform",
+        "initializations": 50,
+        "chains": null,
+        "nAUBC": 0.6089469482037765,
+        "best_at_160": 6.99022470896
+      },
+      {
+        "id": "nll_original",
+        "initializations": 50,
+        "chains": null,
+        "nAUBC": 0.606782270231002,
+        "best_at_160": 6.98916253046
+      },
+      {
+        "id": "pairwise_gp",
+        "initializations": 50,
+        "chains": null,
+        "nAUBC": 0.6290079866158175,
+        "best_at_160": 7.371664463879999
+      },
+      {
+        "id": "mixed_gp",
+        "initializations": 50,
+        "chains": null,
+        "nAUBC": 0.630993616009872,
+        "best_at_160": 7.12804481514
+      },
+      {
+        "id": "alde_dnn_greedy",
+        "initializations": 50,
+        "chains": null,
+        "nAUBC": 0.5991419602324222,
+        "best_at_160": 6.81855464948
+      },
+      {
+        "id": "alde_dnn_ts",
+        "initializations": 50,
+        "chains": null,
+        "nAUBC": 0.5923743882958791,
+        "best_at_160": 6.84290212564
+      },
+      {
+        "id": "ssmula_boosting_greedy",
+        "initializations": 50,
+        "chains": null,
+        "nAUBC": 0.5232023248779555,
+        "best_at_160": 5.82480410412
+      },
+      {
+        "id": "strong_fixed",
+        "initializations": 50,
+        "chains": null,
+        "nAUBC": 0.6099653395510011,
+        "best_at_160": 6.97313934206
+      },
+      {
+        "id": "menu_random",
+        "initializations": 50,
+        "chains": 5,
+        "nAUBC": 0.6196343562120041,
+        "best_at_160": 7.115571990516
+      },
+      {
+        "id": "menu_no_history",
+        "initializations": 50,
+        "chains": 5,
+        "nAUBC": 0.6174108289113511,
+        "best_at_160": 7.110035530539999
+      },
+      {
+        "id": "menu_history",
+        "initializations": 50,
+        "chains": 5,
+        "nAUBC": 0.6157883599513164,
+        "best_at_160": 7.074555535488
+      }
+    ],
+    "comparisons": [
+      {
+        "target": "menu_history",
+        "reference": "random",
+        "primary": false,
+        "mean_delta": 0.33035263046735797,
+        "ci95": [
+          0.29619521239158075,
+          0.3633776676094704
+        ],
+        "accepted": true
+      },
+      {
+        "target": "menu_history",
+        "reference": "mlp5_greedy",
+        "primary": false,
+        "mean_delta": 0.008646656137013046,
+        "ci95": [
+          -0.015377787303084603,
+          0.033107025662347495
+        ],
+        "accepted": false
+      },
+      {
+        "target": "menu_history",
+        "reference": "initial",
+        "primary": true,
+        "mean_delta": -0.0016224689600346921,
+        "ci95": [
+          -0.012052092042381782,
+          0.005286854841224047
+        ],
+        "accepted": false
+      },
+      {
+        "target": "menu_history",
+        "reference": "mlp5_thompson",
+        "primary": false,
+        "mean_delta": 0.005823020400315299,
+        "ci95": [
+          -0.020776062774182535,
+          0.03315645853177488
+        ],
+        "accepted": false
+      },
+      {
+        "target": "menu_history",
+        "reference": "uniform",
+        "primary": false,
+        "mean_delta": 0.0068414117475399504,
+        "ci95": [
+          -0.021809832522616902,
+          0.03515789584716811
+        ],
+        "accepted": false
+      },
+      {
+        "target": "menu_history",
+        "reference": "nll_original",
+        "primary": false,
+        "mean_delta": 0.009006089720314471,
+        "ci95": [
+          -0.012430288225228273,
+          0.030739863339684585
+        ],
+        "accepted": false
+      },
+      {
+        "target": "menu_history",
+        "reference": "pairwise_gp",
+        "primary": false,
+        "mean_delta": -0.013219626664501046,
+        "ci95": [
+          -0.04111289375023017,
+          0.013779857221373966
+        ],
+        "accepted": false
+      },
+      {
+        "target": "menu_history",
+        "reference": "mixed_gp",
+        "primary": false,
+        "mean_delta": -0.015205256058555605,
+        "ci95": [
+          -0.04336275714247533,
+          0.012534149889593537
+        ],
+        "accepted": false
+      },
+      {
+        "target": "menu_history",
+        "reference": "alde_dnn_greedy",
+        "primary": false,
+        "mean_delta": 0.016646399718894308,
+        "ci95": [
+          -0.017253005113440294,
+          0.05137294575772499
+        ],
+        "accepted": false
+      },
+      {
+        "target": "menu_history",
+        "reference": "alde_dnn_ts",
+        "primary": false,
+        "mean_delta": 0.023413971655437398,
+        "ci95": [
+          -0.0062795131510542355,
+          0.05237308810448741
+        ],
+        "accepted": false
+      },
+      {
+        "target": "menu_history",
+        "reference": "ssmula_boosting_greedy",
+        "primary": false,
+        "mean_delta": 0.09258603507336095,
+        "ci95": [
+          0.051902642140345866,
+          0.13364498246714107
+        ],
+        "accepted": true
+      },
+      {
+        "target": "menu_history",
+        "reference": "strong_fixed",
+        "primary": true,
+        "mean_delta": 0.005823020400315299,
+        "ci95": [
+          -0.020776062774182535,
+          0.03315645853177488
+        ],
+        "accepted": false
+      },
+      {
+        "target": "menu_history",
+        "reference": "menu_no_history",
+        "primary": true,
+        "mean_delta": -0.0016224689600346921,
+        "ci95": [
+          -0.012052092042381782,
+          0.005286854841224047
+        ],
+        "accepted": false
+      },
+      {
+        "target": "menu_history",
+        "reference": "menu_random",
+        "primary": true,
+        "mean_delta": -0.003845996260687696,
+        "ci95": [
+          -0.0175869328240915,
+          0.0017142356561490625
+        ],
+        "accepted": false
+      }
+    ],
+    "design": "5条搜索链 × 50共同初始化 · GB1",
+    "conclusion": "有历史策略搜索未优于初始策略与随机搜索。",
+    "context": "全部主要比较和探索性比较均保留。此阶段采用固定策略执行，不等于当前在线Agent系统；未验证TrpB4迁移或元层改进。"
+  },
+  "v18": {
+    "methods": [
+      {
+        "id": "initial",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.6246957009690097,
+        "best_at_160": 7.132302710835937
+      },
+      {
+        "id": "mlp5_ucb_local",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.621034543789981,
+        "best_at_160": 7.233520249742187
+      },
+      {
+        "id": "mlp5_greedy_global",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.6198028411116525,
+        "best_at_160": 7.008031305703125
+      },
+      {
+        "id": "mlp5_greedy_local",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.6161789151621448,
+        "best_at_160": 6.994593496882812
+      },
+      {
+        "id": "mlp5_thompson_global",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.5912201860559821,
+        "best_at_160": 6.788875920390625
+      },
+      {
+        "id": "mlp5_thompson_local",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.5929840784294235,
+        "best_at_160": 6.869942621132813
+      },
+      {
+        "id": "mlp5_ei_global",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.589199369814508,
+        "best_at_160": 6.709892816078125
+      },
+      {
+        "id": "mlp5_ei_local",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.5995102922400544,
+        "best_at_160": 6.902058023273438
+      },
+      {
+        "id": "pairwise_gp",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.6207182367738703,
+        "best_at_160": 7.113921708992187
+      },
+      {
+        "id": "mixed_gp",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.6309060057616768,
+        "best_at_160": 7.304654579304687
+      },
+      {
+        "id": "alde_dnn_greedy",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.6082745574085288,
+        "best_at_160": 7.056860904367187
+      },
+      {
+        "id": "alde_dnn_ts",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.6139621762052208,
+        "best_at_160": 7.146187353249999
+      },
+      {
+        "id": "ssmula_boosting_greedy",
+        "initializations": 128,
+        "chains": null,
+        "nAUBC": 0.5233997364269762,
+        "best_at_160": 5.970219401421875
+      }
+    ],
+    "comparisons": [
+      {
+        "target": "mlp5_ei_local",
+        "reference": "initial",
+        "primary": true,
+        "mean_delta": -0.02518540872895539,
+        "ci95": [
+          -0.04344369848870879,
+          -0.006864971576149571
+        ],
+        "accepted": false
+      },
+      {
+        "target": "mlp5_ei_local",
+        "reference": "mlp5_ei_global",
+        "primary": true,
+        "mean_delta": 0.01031092242554624,
+        "ci95": [
+          -6.37755818932126e-05,
+          0.020691784357673795
+        ],
+        "accepted": false
+      },
+      {
+        "target": "mlp5_ei_local",
+        "reference": "mlp5_ucb_local",
+        "primary": true,
+        "mean_delta": -0.0215242515499267,
+        "ci95": [
+          -0.03960611087888998,
+          -0.0034079450475922573
+        ],
+        "accepted": false
+      },
+      {
+        "target": "mlp5_ei_local",
+        "reference": "mlp5_greedy_global",
+        "primary": true,
+        "mean_delta": -0.02029254887159815,
+        "ci95": [
+          -0.04026934150786691,
+          4.8310430103625184e-05
+        ],
+        "accepted": false
+      },
+      {
+        "target": "mlp5_ei_local",
+        "reference": "mlp5_greedy_local",
+        "primary": false,
+        "mean_delta": -0.016668622922090568,
+        "ci95": [
+          -0.03604260942836463,
+          0.0032985134001467815
+        ],
+        "accepted": false
+      },
+      {
+        "target": "mlp5_ei_local",
+        "reference": "mlp5_thompson_global",
+        "primary": false,
+        "mean_delta": 0.00829010618407216,
+        "ci95": [
+          -0.01180495500557855,
+          0.028370574429033527
+        ],
+        "accepted": false
+      },
+      {
+        "target": "mlp5_ei_local",
+        "reference": "mlp5_thompson_local",
+        "primary": false,
+        "mean_delta": 0.006526213810630909,
+        "ci95": [
+          -0.012400280555211064,
+          0.02577929588533489
+        ],
+        "accepted": false
+      },
+      {
+        "target": "mlp5_ei_local",
+        "reference": "pairwise_gp",
+        "primary": false,
+        "mean_delta": -0.02120794453381597,
+        "ci95": [
+          -0.043209718774175995,
+          0.000637179816209109
+        ],
+        "accepted": false
+      },
+      {
+        "target": "mlp5_ei_local",
+        "reference": "mixed_gp",
+        "primary": false,
+        "mean_delta": -0.031395713521622404,
+        "ci95": [
+          -0.05037287235427801,
+          -0.012313610169713139
+        ],
+        "accepted": false
+      },
+      {
+        "target": "mlp5_ei_local",
+        "reference": "alde_dnn_greedy",
+        "primary": false,
+        "mean_delta": -0.008764265168474434,
+        "ci95": [
+          -0.030296436485739126,
+          0.012880389120728928
+        ],
+        "accepted": false
+      },
+      {
+        "target": "mlp5_ei_local",
+        "reference": "alde_dnn_ts",
+        "primary": false,
+        "mean_delta": -0.014451883965166416,
+        "ci95": [
+          -0.03594862308791856,
+          0.00739990982262659
+        ],
+        "accepted": false
+      },
+      {
+        "target": "mlp5_ei_local",
+        "reference": "ssmula_boosting_greedy",
+        "primary": false,
+        "mean_delta": 0.07611055581307813,
+        "ci95": [
+          0.05284804705610882,
+          0.10013939744563512
+        ],
+        "accepted": true
+      }
+    ],
+    "design": "128共同初始化 · GB1 · 13种固定方法",
+    "conclusion": "预定 EI + 局部候选方法未通过四项主要比较。",
+    "context": "相对初始策略的ΔnAUBC为负，95%区间也在零以下。该结果不能支持局部候选池改善发现效率。"
+  }
+}
