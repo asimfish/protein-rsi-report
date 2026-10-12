@@ -2,7 +2,7 @@
   "schema_version": 1,
   "study_version": "program-history-3",
   "source_updated_utc": "2026-10-12T10:36:13.624628+00:00",
-  "generated_utc": "2026-10-12T16:44:41.868223+00:00",
+  "generated_utc": "2026-10-12T17:33:13.872071+00:00",
   "status": "paused",
   "stage": "fixed_development",
   "counts": {
@@ -26,7 +26,7 @@
   },
   "execution": {
     "active": false,
-    "checked_utc": "2026-10-12T16:44:41.868223+00:00"
+    "checked_utc": "2026-10-12T17:33:13.872071+00:00"
   },
   "prior_runs": [
     {
