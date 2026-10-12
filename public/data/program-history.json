@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "study_version": "program-history-3",
-  "source_updated_utc": "2026-10-12T10:10:16.863038+00:00",
-  "generated_utc": "2026-10-12T10:10:20.843447+00:00",
-  "status": "running",
+  "source_updated_utc": "2026-10-12T10:36:13.624628+00:00",
+  "generated_utc": "2026-10-12T16:44:41.868223+00:00",
+  "status": "paused",
   "stage": "fixed_development",
   "counts": {
-    "episodes_started": 123,
-    "episodes_completed": 122,
-    "episodes_failed": 0,
-    "unresolved_episodes": 1,
-    "known_label_queries": 19520,
+    "episodes_started": 411,
+    "episodes_completed": 410,
+    "episodes_failed": 1,
+    "unresolved_episodes": 0,
+    "known_label_queries": 65600,
     "model_requests_started": 0,
     "model_requests_completed": 0,
     "model_requests_failed": 0,
@@ -25,8 +25,8 @@
     "proposals": 500
   },
   "execution": {
-    "active": true,
-    "checked_utc": "2026-10-12T10:10:20.843447+00:00"
+    "active": false,
+    "checked_utc": "2026-10-12T16:44:41.868223+00:00"
   },
   "prior_runs": [
     {
