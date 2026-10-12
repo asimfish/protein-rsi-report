@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
-  "generated_utc": "2026-10-12T07:07:18.772708+00:00",
+  "generated_utc": "2026-10-12T10:10:48.460045+00:00",
   "study_version": "online-system-6",
-  "source_updated_utc": "2026-10-12T07:07:11.746459+00:00",
+  "source_updated_utc": "2026-10-12T10:10:12.072663+00:00",
   "counts": {
-    "episodes_started": 872,
-    "episodes_completed": 871,
+    "episodes_started": 905,
+    "episodes_completed": 904,
     "episodes_failed": 0,
-    "known_label_queries": 139408,
-    "recorded_model_requests": 2858,
-    "model_responses_completed": 2205,
-    "model_attempts_failed": 652,
+    "known_label_queries": 144752,
+    "recorded_model_requests": 3128,
+    "model_responses_completed": 2355,
+    "model_attempts_failed": 772,
     "model_attempts_unsettled": 1
   },
   "execution": {
     "active": true,
-    "checked_utc": "2026-10-12T07:07:18.772708+00:00",
+    "checked_utc": "2026-10-12T10:10:48.460045+00:00",
     "note": "本机研究进程已核验；当前阶段：外层策略搜索。完整性能评价尚未完成。 计数含一次独立记录的无标签连接检查，其响应不进入科研历史。"
   },
   "scientific_support": false,
