@@ -27,16 +27,18 @@ jobs:
           node-version: '24'
       - name: Update public execution progress
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-        run: node scripts/update-progress.mjs
+        run: |
+          node scripts/update-progress.mjs
+          node scripts/update-program.mjs
       - name: Record the public progress snapshot
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
-          if git diff --quiet -- public/data/progress.json; then
+          if git diff --quiet -- public/data/progress.json public/data/program-history.json; then
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/data/progress.json
+          git add public/data/progress.json public/data/program-history.json
           git commit -m 'Update public execution progress'
           git push origin HEAD:main
       - run: npm test

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "study_version": "program-history-3",
+  "source_updated_utc": "2026-10-12T10:04:59.767581+00:00",
+  "generated_utc": "2026-10-12T10:04:59.872805+00:00",
+  "status": "running",
+  "stage": "fixed_development",
+  "counts": {
+    "episodes_started": 33,
+    "episodes_completed": 32,
+    "episodes_failed": 0,
+    "unresolved_episodes": 1,
+    "known_label_queries": 5120,
+    "model_requests_started": 0,
+    "model_requests_completed": 0,
+    "model_requests_failed": 0,
+    "model_requests_unsettled": 0,
+    "known_tokens": 0,
+    "unknown_token_records": 0
+  },
+  "budget": {
+    "episodes": 11590,
+    "labels": 1854400,
+    "requests": 412,
+    "proposals": 500
+  },
+  "execution": {
+    "active": true,
+    "checked_utc": "2026-10-12T10:04:59.872805+00:00"
+  },
+  "prior_runs": [
+    {
+      "study_version": "program-history-1",
+      "requests_started": 2,
+      "requests_completed": 1,
+      "requests_failed": 1,
+      "known_tokens": 42,
+      "unknown_token_records": 1,
+      "label_queries": 0
+    },
+    {
+      "study_version": "program-history-2",
+      "requests_started": 1,
+      "requests_completed": 0,
+      "requests_failed": 1,
+      "known_tokens": 0,
+      "unknown_token_records": 1,
+      "label_queries": 0
+    },
+    {
+      "study_version": "provider-diagnostic",
+      "requests_started": 1,
+      "requests_completed": 0,
+      "requests_failed": 1,
+      "known_tokens": 0,
+      "unknown_token_records": 1,
+      "label_queries": 0
+    }
+  ],
+  "scientific_support": false,
+  "meta_improver_supported": false
+}

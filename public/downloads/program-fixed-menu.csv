@@ -1,0 +1,165 @@
+method_id,type,program_source,domain_adapter
+fixed_random,program,"def policy(state, tools):
+    return tools.random()
+",
+linear_greedy_global,program,"def policy(state, tools):
+    scores = tools.score('linear', 'greedy', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+linear_greedy_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('linear', 'greedy', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+linear_ucb_global,program,"def policy(state, tools):
+    scores = tools.score('linear', 'ucb', beta=0.5)
+    return tools.select(scores, pool='global')
+",
+linear_ucb_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('linear', 'ucb', beta=0.5)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+linear_ei_global,program,"def policy(state, tools):
+    scores = tools.score('linear', 'ei', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+linear_ei_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('linear', 'ei', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+gp_greedy_global,program,"def policy(state, tools):
+    scores = tools.score('gp', 'greedy', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+gp_greedy_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('gp', 'greedy', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+gp_ucb_global,program,"def policy(state, tools):
+    scores = tools.score('gp', 'ucb', beta=0.5)
+    return tools.select(scores, pool='global')
+",
+gp_ucb_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('gp', 'ucb', beta=0.5)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+gp_ei_global,program,"def policy(state, tools):
+    scores = tools.score('gp', 'ei', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+gp_ei_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('gp', 'ei', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+mlp5_greedy_global,program,"def policy(state, tools):
+    scores = tools.score('mlp5', 'greedy', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+mlp5_greedy_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('mlp5', 'greedy', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+initial,program,"def policy(state, tools):
+    scores = tools.score('mlp5', 'ucb', beta=0.5)
+    return tools.select(scores, pool='global')
+",
+mlp5_ucb_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('mlp5', 'ucb', beta=0.5)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+mlp5_ei_global,program,"def policy(state, tools):
+    scores = tools.score('mlp5', 'ei', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+mlp5_ei_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('mlp5', 'ei', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+epistasis_additive_greedy_global,program,"def policy(state, tools):
+    scores = tools.score('epistasis_additive', 'greedy', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+epistasis_additive_greedy_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('epistasis_additive', 'greedy', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+epistasis_additive_ucb_global,program,"def policy(state, tools):
+    scores = tools.score('epistasis_additive', 'ucb', beta=0.5)
+    return tools.select(scores, pool='global')
+",
+epistasis_additive_ucb_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('epistasis_additive', 'ucb', beta=0.5)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+epistasis_additive_ei_global,program,"def policy(state, tools):
+    scores = tools.score('epistasis_additive', 'ei', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+epistasis_additive_ei_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('epistasis_additive', 'ei', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+epistasis_pairwise_greedy_global,program,"def policy(state, tools):
+    scores = tools.score('epistasis_pairwise', 'greedy', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+epistasis_pairwise_greedy_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('epistasis_pairwise', 'greedy', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+epistasis_pairwise_ucb_global,program,"def policy(state, tools):
+    scores = tools.score('epistasis_pairwise', 'ucb', beta=0.5)
+    return tools.select(scores, pool='global')
+",
+epistasis_pairwise_ucb_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('epistasis_pairwise', 'ucb', beta=0.5)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+epistasis_pairwise_ei_global,program,"def policy(state, tools):
+    scores = tools.score('epistasis_pairwise', 'ei', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+epistasis_pairwise_ei_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('epistasis_pairwise', 'ei', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+epistasis_mixed_greedy_global,program,"def policy(state, tools):
+    scores = tools.score('epistasis_mixed', 'greedy', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+epistasis_mixed_greedy_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('epistasis_mixed', 'greedy', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+epistasis_mixed_ucb_global,program,"def policy(state, tools):
+    scores = tools.score('epistasis_mixed', 'ucb', beta=0.5)
+    return tools.select(scores, pool='global')
+",
+epistasis_mixed_ucb_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('epistasis_mixed', 'ucb', beta=0.5)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+epistasis_mixed_ei_global,program,"def policy(state, tools):
+    scores = tools.score('epistasis_mixed', 'ei', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+epistasis_mixed_ei_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('epistasis_mixed', 'ei', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+mlp5_thompson_global,program,"def policy(state, tools):
+    scores = tools.score('mlp5', 'thompson', beta=0.0)
+    return tools.select(scores, pool='global')
+",
+mlp5_thompson_elite_hamming_1,program,"def policy(state, tools):
+    scores = tools.score('mlp5', 'thompson', beta=0.0)
+    return tools.select(scores, pool='elite_hamming_1')
+",
+mlp_pairwise_blend,program,"def policy(state, tools):
+    a = tools.score('mlp5', 'ucb', beta=0.5)
+    b = tools.score('epistasis_pairwise', 'ucb', beta=0.5)
+    scores = tools.blend(a, b, weight=0.5)
+    return tools.select(scores)
+",
+alde_dnn_greedy,domain,,alde_dnn_greedy
+alde_dnn_ts,domain,,alde_dnn_ts
+ssmula_boosting_greedy,domain,,ssmula_boosting_greedy
