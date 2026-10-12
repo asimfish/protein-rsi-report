@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {validateProgram} from '../public/program-model.js';
+const old=JSON.parse(await readFile(new URL('../public/data/program-history.json',import.meta.url),'utf8'));
+const continued=()=>({...structuredClone(old),study_version:'program-history-4',budget:{...old.budget,episodes:11591},counts:{...old.counts,episodes_started:411,episodes_completed:410,episodes_failed:1,unresolved_episodes:0,known_label_queries:65600}});
+test('Registered continuation retains inherited costs and the zero-query failure without changing completed replay or label caps',()=>{assert.equal(validateProgram(old),true);assert.equal(validateProgram(continued()),true);for(const change of [p=>p.budget.episodes=11590,p=>p.counts.episodes_failed=0,p=>p.counts.episodes_completed=409,p=>p.counts.known_label_queries=0,p=>p.study_version='program-history-5',p=>p.scientific_support=true]){const p=continued();change(p);assert.equal(validateProgram(p),false);}const p=continued();p.counts.episodes_started=11591;p.counts.episodes_completed=11590;p.counts.known_label_queries=1854400;assert.equal(validateProgram(p),true);p.counts.known_label_queries++;assert.equal(validateProgram(p),false);});
