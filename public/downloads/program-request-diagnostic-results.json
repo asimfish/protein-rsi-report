@@ -1,0 +1,32 @@
+{
+  "phase": "completed",
+  "requests_started": 8,
+  "rows": [
+    {
+      "max_tokens": 512,
+      "attempts": 4,
+      "network_requests": 4,
+      "http_successes": 2,
+      "adapter_successes": 2,
+      "valid_compiled_responses": 2,
+      "http_429": 2,
+      "truncations": 0
+    },
+    {
+      "max_tokens": 4096,
+      "attempts": 4,
+      "network_requests": 4,
+      "http_successes": 2,
+      "adapter_successes": 2,
+      "valid_compiled_responses": 2,
+      "http_429": 2,
+      "truncations": 0
+    }
+  ],
+  "known_tokens": 3155,
+  "unknown_usage": 4,
+  "biological_queries": 0,
+  "scientific_support": false,
+  "performance_evidence": false,
+  "automatic_scientific_launch": false
+}
