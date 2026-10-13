@@ -1,0 +1,720 @@
+{
+  "fixed": [
+    {
+      "id": "initial",
+      "label": "MLP5 · UCB · 全局（初始策略）",
+      "n": 10,
+      "mean": 0.6603324557993737,
+      "sd": 0.09268559883424095,
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_normalized_best": 0.8166096956338036,
+      "mean_raw_best": 7.155106107499999,
+      "mean_runtime_seconds": 6.4733896955032835
+    },
+    {
+      "id": "mlp_pairwise_blend",
+      "label": "MLP5 / 成对上位性 · 排序混合",
+      "n": 10,
+      "mean": 0.6511735618928111,
+      "sd": 0.10776525578884852,
+      "delta": -0.009158893906562687,
+      "ci95": [
+        -0.03455857963633974,
+        0.016317176135004493
+      ],
+      "mean_normalized_best": 0.8433358487932425,
+      "mean_raw_best": 7.3892797435999995,
+      "mean_runtime_seconds": 9.30614059669897
+    },
+    {
+      "id": "mlp5_greedy_elite_hamming_1",
+      "label": "MLP5 · Greedy · 局部",
+      "n": 10,
+      "mean": 0.6485145213544534,
+      "sd": 0.10449481337257888,
+      "delta": -0.011817934444920176,
+      "ci95": [
+        -0.042813686150417245,
+        0.01793816700515738
+      ],
+      "mean_normalized_best": 0.8376691367391956,
+      "mean_raw_best": 7.339628207199999,
+      "mean_runtime_seconds": 6.511350069701439
+    },
+    {
+      "id": "gp_ei_elite_hamming_1",
+      "label": "GP · EI · 局部",
+      "n": 10,
+      "mean": 0.6453585560995492,
+      "sd": 0.08054289846744957,
+      "delta": -0.014973899699824388,
+      "ci95": [
+        -0.08546147087036056,
+        0.04996588510491844
+      ],
+      "mean_normalized_best": 0.7960706863788694,
+      "mean_raw_best": 6.9751440138000005,
+      "mean_runtime_seconds": 5.146187283599284
+    },
+    {
+      "id": "mlp5_thompson_global",
+      "label": "MLP5 · Thompson sampling · 全局",
+      "n": 10,
+      "mean": 0.6443702105184901,
+      "sd": 0.11610931270060512,
+      "delta": -0.01596224528088357,
+      "ci95": [
+        -0.07508432152182375,
+        0.03536566934530327
+      ],
+      "mean_normalized_best": 0.8508987747395024,
+      "mean_raw_best": 7.455545841,
+      "mean_runtime_seconds": 7.727589003299363
+    },
+    {
+      "id": "gp_ei_global",
+      "label": "GP · EI · 全局",
+      "n": 10,
+      "mean": 0.6426454997637006,
+      "sd": 0.08309708864629158,
+      "delta": -0.017686956035673128,
+      "ci95": [
+        -0.09017507396615956,
+        0.04945223654607105
+      ],
+      "mean_normalized_best": 0.7943814506318809,
+      "mean_raw_best": 6.9603429882,
+      "mean_runtime_seconds": 5.248844542796723
+    },
+    {
+      "id": "alde_dnn_ts",
+      "label": "ALDE适配 · DNN Thompson sampling",
+      "n": 10,
+      "mean": 0.6390187035232657,
+      "sd": 0.13346775157078505,
+      "delta": -0.021313752276107968,
+      "ci95": [
+        -0.10282523042606143,
+        0.04699779066903934
+      ],
+      "mean_normalized_best": 0.7742374043608098,
+      "mean_raw_best": 6.7838415466,
+      "mean_runtime_seconds": 6.443172193097416
+    },
+    {
+      "id": "mlp5_ucb_elite_hamming_1",
+      "label": "MLP5 · UCB · 局部",
+      "n": 10,
+      "mean": 0.6368523707609932,
+      "sd": 0.08362211784094122,
+      "delta": -0.023480085038380515,
+      "ci95": [
+        -0.07337074018713766,
+        0.013093714636702346
+      ],
+      "mean_normalized_best": 0.8225809458708063,
+      "mean_raw_best": 7.207425996999999,
+      "mean_runtime_seconds": 6.463916255199001
+    },
+    {
+      "id": "mlp5_thompson_elite_hamming_1",
+      "label": "MLP5 · Thompson sampling · 局部",
+      "n": 10,
+      "mean": 0.6364966746167305,
+      "sd": 0.1004859853057217,
+      "delta": -0.023835781182643113,
+      "ci95": [
+        -0.08963805058772861,
+        0.0230400392881994
+      ],
+      "mean_normalized_best": 0.8487493247257257,
+      "mean_raw_best": 7.4367124337999995,
+      "mean_runtime_seconds": 6.351820173693705
+    },
+    {
+      "id": "epistasis_mixed_ei_elite_hamming_1",
+      "label": "混合上位性 · EI · 局部",
+      "n": 10,
+      "mean": 0.6333942152680244,
+      "sd": 0.09784751211633554,
+      "delta": -0.02693824053134931,
+      "ci95": [
+        -0.07526447633697575,
+        0.013980666803436199
+      ],
+      "mean_normalized_best": 0.801439991834636,
+      "mean_raw_best": 7.022189683800001,
+      "mean_runtime_seconds": 4.44992102929682
+    },
+    {
+      "id": "mlp5_greedy_global",
+      "label": "MLP5 · Greedy · 全局",
+      "n": 10,
+      "mean": 0.6308159488493434,
+      "sd": 0.12499083166979182,
+      "delta": -0.029516506950030174,
+      "ci95": [
+        -0.08564747151553358,
+        0.022031855122207556
+      ],
+      "mean_normalized_best": 0.8266422965764704,
+      "mean_raw_best": 7.2430114124,
+      "mean_runtime_seconds": 6.538904303102754
+    },
+    {
+      "id": "epistasis_pairwise_ei_elite_hamming_1",
+      "label": "成对上位性 · EI · 局部",
+      "n": 10,
+      "mean": 0.6289923339584533,
+      "sd": 0.13237213679150917,
+      "delta": -0.031340121840920374,
+      "ci95": [
+        -0.11232601292956021,
+        0.04211368880976056
+      ],
+      "mean_normalized_best": 0.8514885285348122,
+      "mean_raw_best": 7.4607132435,
+      "mean_runtime_seconds": 4.111302345205331
+    },
+    {
+      "id": "epistasis_pairwise_ei_global",
+      "label": "成对上位性 · EI · 全局",
+      "n": 10,
+      "mean": 0.6265459311279912,
+      "sd": 0.13318073712811207,
+      "delta": -0.03378652467138246,
+      "ci95": [
+        -0.11472010834754061,
+        0.040559888374735086
+      ],
+      "mean_normalized_best": 0.8468733115518161,
+      "mean_raw_best": 7.4202748708,
+      "mean_runtime_seconds": 4.100503193202894
+    },
+    {
+      "id": "mlp5_ei_elite_hamming_1",
+      "label": "MLP5 · EI · 局部",
+      "n": 10,
+      "mean": 0.6147490300241882,
+      "sd": 0.07334703904201212,
+      "delta": -0.04558342577518543,
+      "ci95": [
+        -0.10689114443919003,
+        0.0008533975325115175
+      ],
+      "mean_normalized_best": 0.7528188273578872,
+      "mean_raw_best": 6.596172710499999,
+      "mean_runtime_seconds": 6.557273946198984
+    },
+    {
+      "id": "epistasis_pairwise_ucb_elite_hamming_1",
+      "label": "成对上位性 · UCB · 局部",
+      "n": 10,
+      "mean": 0.6146844387972058,
+      "sd": 0.16041399264124237,
+      "delta": -0.04564801700216795,
+      "ci95": [
+        -0.14198514633717224,
+        0.040188190050956425
+      ],
+      "mean_normalized_best": 0.8275359275272651,
+      "mean_raw_best": 7.2508413761,
+      "mean_runtime_seconds": 4.047148424896295
+    },
+    {
+      "id": "epistasis_pairwise_ucb_global",
+      "label": "成对上位性 · UCB · 全局",
+      "n": 10,
+      "mean": 0.6141311444805726,
+      "sd": 0.15900601071394968,
+      "delta": -0.04620131131880114,
+      "ci95": [
+        -0.14069777697398017,
+        0.03889026070035239
+      ],
+      "mean_normalized_best": 0.8275359275272651,
+      "mean_raw_best": 7.2508413761,
+      "mean_runtime_seconds": 4.021000172308414
+    },
+    {
+      "id": "epistasis_mixed_ucb_elite_hamming_1",
+      "label": "混合上位性 · UCB · 局部",
+      "n": 10,
+      "mean": 0.6139132280442141,
+      "sd": 0.10644179936861924,
+      "delta": -0.04641922775515954,
+      "ci95": [
+        -0.09664229730199606,
+        0.0017112311490017798
+      ],
+      "mean_normalized_best": 0.818814859230487,
+      "mean_raw_best": 7.174427675199999,
+      "mean_runtime_seconds": 4.501652616698993
+    },
+    {
+      "id": "epistasis_pairwise_greedy_global",
+      "label": "成对上位性 · Greedy · 全局",
+      "n": 10,
+      "mean": 0.6135229338429171,
+      "sd": 0.1562689964279503,
+      "delta": -0.046809521956456476,
+      "ci95": [
+        -0.1380172021979833,
+        0.03705679817413852
+      ],
+      "mean_normalized_best": 0.8407736350068159,
+      "mean_raw_best": 7.3668297144,
+      "mean_runtime_seconds": 4.023789827604196
+    },
+    {
+      "id": "linear_ei_elite_hamming_1",
+      "label": "线性 · EI · 局部",
+      "n": 10,
+      "mean": 0.6131309336773896,
+      "sd": 0.10298097298285869,
+      "delta": -0.04720152212198421,
+      "ci95": [
+        -0.1331877260299318,
+        0.02706132672391987
+      ],
+      "mean_normalized_best": 0.787071778246194,
+      "mean_raw_best": 6.896295889799999,
+      "mean_runtime_seconds": 1.7186742607998895
+    },
+    {
+      "id": "epistasis_pairwise_greedy_elite_hamming_1",
+      "label": "成对上位性 · Greedy · 局部",
+      "n": 10,
+      "mean": 0.6114138344616504,
+      "sd": 0.1607603101268346,
+      "delta": -0.04891862133772322,
+      "ci95": [
+        -0.14514521148181986,
+        0.03786518643333007
+      ],
+      "mean_normalized_best": 0.8275359275272651,
+      "mean_raw_best": 7.2508413761,
+      "mean_runtime_seconds": 4.080167645201437
+    },
+    {
+      "id": "mlp5_ei_global",
+      "label": "MLP5 · EI · 全局",
+      "n": 10,
+      "mean": 0.6099528286979228,
+      "sd": 0.11527621619095081,
+      "delta": -0.05037962710145092,
+      "ci95": [
+        -0.11756514190252104,
+        0.0006036966238174016
+      ],
+      "mean_normalized_best": 0.7623222492462142,
+      "mean_raw_best": 6.6794413667,
+      "mean_runtime_seconds": 6.548323917997186
+    },
+    {
+      "id": "alde_dnn_greedy",
+      "label": "ALDE适配 · DNN Greedy",
+      "n": 10,
+      "mean": 0.6060565798448903,
+      "sd": 0.1261077804063348,
+      "delta": -0.054275875954483375,
+      "ci95": [
+        -0.1220708909773943,
+        0.0012120244442428078
+      ],
+      "mean_normalized_best": 0.7654446884424082,
+      "mean_raw_best": 6.7068000717,
+      "mean_runtime_seconds": 6.280171637507737
+    },
+    {
+      "id": "epistasis_mixed_greedy_elite_hamming_1",
+      "label": "混合上位性 · Greedy · 局部",
+      "n": 10,
+      "mean": 0.6060368112620688,
+      "sd": 0.10015677421426672,
+      "delta": -0.05429564453730494,
+      "ci95": [
+        -0.1065235370448542,
+        -0.004567183694795074
+      ],
+      "mean_normalized_best": 0.795797490398198,
+      "mean_raw_best": 6.97275028,
+      "mean_runtime_seconds": 4.611161173004075
+    },
+    {
+      "id": "epistasis_mixed_ei_global",
+      "label": "混合上位性 · EI · 全局",
+      "n": 10,
+      "mean": 0.603796422462404,
+      "sd": 0.11894947560348122,
+      "delta": -0.0565360333369697,
+      "ci95": [
+        -0.10791502005824281,
+        -0.008571696257035877
+      ],
+      "mean_normalized_best": 0.7630653706250958,
+      "mean_raw_best": 6.6859525707000005,
+      "mean_runtime_seconds": 4.362075241989805
+    },
+    {
+      "id": "linear_greedy_elite_hamming_1",
+      "label": "线性 · Greedy · 局部",
+      "n": 10,
+      "mean": 0.6020867209566988,
+      "sd": 0.14167422353473857,
+      "delta": -0.058245734842674854,
+      "ci95": [
+        -0.15546314982552625,
+        0.03212947525707717
+      ],
+      "mean_normalized_best": 0.716236442721341,
+      "mean_raw_best": 6.2756391126999995,
+      "mean_runtime_seconds": 1.7060109012963949
+    },
+    {
+      "id": "epistasis_mixed_ucb_global",
+      "label": "混合上位性 · UCB · 全局",
+      "n": 10,
+      "mean": 0.5932149515535033,
+      "sd": 0.12629197671572526,
+      "delta": -0.06711750424587029,
+      "ci95": [
+        -0.11797434992082052,
+        -0.018586343116100773
+      ],
+      "mean_normalized_best": 0.7756664272412438,
+      "mean_raw_best": 6.796362596,
+      "mean_runtime_seconds": 4.488418995600659
+    },
+    {
+      "id": "linear_ucb_elite_hamming_1",
+      "label": "线性 · UCB · 局部",
+      "n": 10,
+      "mean": 0.5907976597229315,
+      "sd": 0.1311943988295329,
+      "delta": -0.06953479607644215,
+      "ci95": [
+        -0.16702342614689683,
+        0.02195732833784923
+      ],
+      "mean_normalized_best": 0.7331684080273688,
+      "mean_raw_best": 6.423996411199999,
+      "mean_runtime_seconds": 1.70995137670252
+    },
+    {
+      "id": "epistasis_additive_greedy_elite_hamming_1",
+      "label": "加性上位性 · Greedy · 局部",
+      "n": 10,
+      "mean": 0.5907609616469661,
+      "sd": 0.10003427972887013,
+      "delta": -0.06957149415240754,
+      "ci95": [
+        -0.12340086461633834,
+        -0.019446004704743256
+      ],
+      "mean_normalized_best": 0.7455597564259616,
+      "mean_raw_best": 6.532568980300001,
+      "mean_runtime_seconds": 4.386655387701467
+    },
+    {
+      "id": "gp_ucb_global",
+      "label": "GP · UCB · 全局",
+      "n": 10,
+      "mean": 0.58670391960847,
+      "sd": 0.1271882200296209,
+      "delta": -0.07362853619090354,
+      "ci95": [
+        -0.13248566428116418,
+        -0.017333998590622592
+      ],
+      "mean_normalized_best": 0.7352282245010434,
+      "mean_raw_best": 6.4420444524,
+      "mean_runtime_seconds": 5.146606648704619
+    },
+    {
+      "id": "epistasis_additive_ucb_elite_hamming_1",
+      "label": "加性上位性 · UCB · 局部",
+      "n": 10,
+      "mean": 0.584576646120359,
+      "sd": 0.09951624195017894,
+      "delta": -0.07575580967901477,
+      "ci95": [
+        -0.1343265703135178,
+        -0.02806358244563394
+      ],
+      "mean_normalized_best": 0.7868458400517613,
+      "mean_raw_best": 6.894316227099999,
+      "mean_runtime_seconds": 4.336169652300304
+    },
+    {
+      "id": "gp_ucb_elite_hamming_1",
+      "label": "GP · UCB · 局部",
+      "n": 10,
+      "mean": 0.5839198927586221,
+      "sd": 0.12909116313821975,
+      "delta": -0.07641256304075153,
+      "ci95": [
+        -0.13819100882427035,
+        -0.01771102887355347
+      ],
+      "mean_normalized_best": 0.7382598413485496,
+      "mean_raw_best": 6.4686073750999995,
+      "mean_runtime_seconds": 5.089302014402347
+    },
+    {
+      "id": "linear_ei_global",
+      "label": "线性 · EI · 全局",
+      "n": 10,
+      "mean": 0.5805319063691559,
+      "sd": 0.13719439408128303,
+      "delta": -0.07980054943021793,
+      "ci95": [
+        -0.15029093996162524,
+        -0.011186446743410747
+      ],
+      "mean_normalized_best": 0.7250931212392326,
+      "mean_raw_best": 6.3532410257,
+      "mean_runtime_seconds": 1.7300765919993863
+    },
+    {
+      "id": "epistasis_additive_ei_elite_hamming_1",
+      "label": "加性上位性 · EI · 局部",
+      "n": 10,
+      "mean": 0.5766399931385727,
+      "sd": 0.1378793626908284,
+      "delta": -0.0836924626608009,
+      "ci95": [
+        -0.1488458479792987,
+        -0.02316700666760825
+      ],
+      "mean_normalized_best": 0.7608412330782138,
+      "mean_raw_best": 6.6664647539,
+      "mean_runtime_seconds": 4.446682454601978
+    },
+    {
+      "id": "gp_greedy_elite_hamming_1",
+      "label": "GP · Greedy · 局部",
+      "n": 10,
+      "mean": 0.5607936438459431,
+      "sd": 0.1385049799361933,
+      "delta": -0.09953881195343045,
+      "ci95": [
+        -0.16070762083519727,
+        -0.03803953210213529
+      ],
+      "mean_normalized_best": 0.7345966880722046,
+      "mean_raw_best": 6.4365109519,
+      "mean_runtime_seconds": 5.181075358699308
+    },
+    {
+      "id": "epistasis_mixed_greedy_global",
+      "label": "混合上位性 · Greedy · 全局",
+      "n": 10,
+      "mean": 0.559507542348583,
+      "sd": 0.16523206930068446,
+      "delta": -0.10082491345079063,
+      "ci95": [
+        -0.17710990230353554,
+        -0.03361369599410381
+      ],
+      "mean_normalized_best": 0.7168738575685648,
+      "mean_raw_best": 6.281224119700001,
+      "mean_runtime_seconds": 4.569711614798871
+    },
+    {
+      "id": "gp_greedy_global",
+      "label": "GP · Greedy · 全局",
+      "n": 10,
+      "mean": 0.5560618520743834,
+      "sd": 0.15025868116607355,
+      "delta": -0.10427060372499017,
+      "ci95": [
+        -0.16674961104314628,
+        -0.04089899588016321
+      ],
+      "mean_normalized_best": 0.72242563439694,
+      "mean_raw_best": 6.3298685976,
+      "mean_runtime_seconds": 5.039852802298265
+    },
+    {
+      "id": "linear_ucb_global",
+      "label": "线性 · UCB · 全局",
+      "n": 10,
+      "mean": 0.5549137504588388,
+      "sd": 0.14620548655332277,
+      "delta": -0.10541870534053477,
+      "ci95": [
+        -0.16988977356855328,
+        -0.046206845943218354
+      ],
+      "mean_normalized_best": 0.6803399215241115,
+      "mean_raw_best": 5.9611150268,
+      "mean_runtime_seconds": 1.7317744194995612
+    },
+    {
+      "id": "ssmula_boosting_greedy",
+      "label": "SSMuLA适配 · Boosting Greedy",
+      "n": 10,
+      "mean": 0.5493380424692685,
+      "sd": 0.10269867253662254,
+      "delta": -0.11099441333010514,
+      "ci95": [
+        -0.18038283333910599,
+        -0.04851902993449005
+      ],
+      "mean_normalized_best": 0.6913746198550496,
+      "mean_raw_best": 6.0578006746,
+      "mean_runtime_seconds": 5.366577422199771
+    },
+    {
+      "id": "linear_greedy_global",
+      "label": "线性 · Greedy · 全局",
+      "n": 10,
+      "mean": 0.543333278876898,
+      "sd": 0.1623620442942487,
+      "delta": -0.1169991769224757,
+      "ci95": [
+        -0.1878024471660004,
+        -0.04693298195661187
+      ],
+      "mean_normalized_best": 0.6455613584409147,
+      "mean_raw_best": 5.6563864514999995,
+      "mean_runtime_seconds": 1.7051752565981588
+    },
+    {
+      "id": "epistasis_additive_ucb_global",
+      "label": "加性上位性 · UCB · 全局",
+      "n": 10,
+      "mean": 0.5406637249049837,
+      "sd": 0.11961636223313862,
+      "delta": -0.11966873089438981,
+      "ci95": [
+        -0.18841695378470075,
+        -0.05540366864612482
+      ],
+      "mean_normalized_best": 0.6955864895254961,
+      "mean_raw_best": 6.094704932,
+      "mean_runtime_seconds": 4.37823412809812
+    },
+    {
+      "id": "epistasis_additive_ei_global",
+      "label": "加性上位性 · EI · 全局",
+      "n": 10,
+      "mean": 0.5204871159164014,
+      "sd": 0.17378977418980043,
+      "delta": -0.13984533988297224,
+      "ci95": [
+        -0.22938907635223482,
+        -0.055163083975781756
+      ],
+      "mean_normalized_best": 0.6273593982916201,
+      "mean_raw_best": 5.4969015018,
+      "mean_runtime_seconds": 4.413164777503698
+    },
+    {
+      "id": "epistasis_additive_greedy_global",
+      "label": "加性上位性 · Greedy · 全局",
+      "n": 10,
+      "mean": 0.4875996028427596,
+      "sd": 0.16507216164661698,
+      "delta": -0.17273285295661395,
+      "ci95": [
+        -0.25380970682909254,
+        -0.0908243447944661
+      ],
+      "mean_normalized_best": 0.6389813592302901,
+      "mean_raw_best": 5.5987327244,
+      "mean_runtime_seconds": 4.404735858298954
+    },
+    {
+      "id": "fixed_random",
+      "label": "随机采样",
+      "n": 10,
+      "mean": 0.3351330613669664,
+      "sd": 0.12612984624717327,
+      "delta": -0.32519939443240725,
+      "ci95": [
+        -0.4051028435408079,
+        -0.24392144168574442
+      ],
+      "mean_normalized_best": 0.3850917913253232,
+      "mean_raw_best": 3.37416105,
+      "mean_runtime_seconds": 0.7296645058959257
+    }
+  ],
+  "search": [
+    {
+      "arm": "none",
+      "completed_chains": 5,
+      "settled": 100,
+      "evaluated": 9,
+      "unique_evaluated_programs": 2,
+      "duplicates": 42,
+      "provider_failures": 49,
+      "accepted_updates": 0,
+      "changed_completed_chains": 0,
+      "formal_nAUBC": null
+    },
+    {
+      "arm": "extreme",
+      "completed_chains": 5,
+      "settled": 100,
+      "evaluated": 9,
+      "unique_evaluated_programs": 5,
+      "duplicates": 36,
+      "provider_failures": 55,
+      "accepted_updates": 0,
+      "changed_completed_chains": 0,
+      "formal_nAUBC": null
+    },
+    {
+      "arm": "context",
+      "completed_chains": 5,
+      "settled": 100,
+      "evaluated": 10,
+      "unique_evaluated_programs": 6,
+      "duplicates": 47,
+      "provider_failures": 43,
+      "accepted_updates": 0,
+      "changed_completed_chains": 0,
+      "formal_nAUBC": null
+    },
+    {
+      "arm": "permuted",
+      "completed_chains": 5,
+      "settled": 100,
+      "evaluated": 10,
+      "unique_evaluated_programs": 5,
+      "duplicates": 26,
+      "provider_failures": 64,
+      "accepted_updates": 0,
+      "changed_completed_chains": 0,
+      "formal_nAUBC": null
+    },
+    {
+      "arm": "random",
+      "completed_chains": 5,
+      "settled": 100,
+      "evaluated": 92,
+      "unique_evaluated_programs": 77,
+      "duplicates": 8,
+      "provider_failures": 0,
+      "accepted_updates": 1,
+      "changed_completed_chains": 1,
+      "formal_nAUBC": null
+    }
+  ],
+  "selected": "initial",
+  "snapshot_finished_utc": "2026-10-13T06:29:07.971850+00:00",
+  "llm_scientific_opportunities": 400,
+  "llm_evaluated": 38,
+  "llm_duplicates": 151,
+  "llm_unique_evaluated_programs": 7,
+  "llm_provider_failures": 211,
+  "scientific_support": false,
+  "formal_results_published": false
+}

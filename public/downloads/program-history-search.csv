@@ -1,0 +1,6 @@
+arm,completed_chains,settled,evaluated,unique_evaluated_programs,duplicates,provider_failures,accepted_updates,changed_completed_chains,formal_nAUBC
+none,5,100,9,2,42,49,0,0,
+extreme,5,100,9,5,36,55,0,0,
+context,5,100,10,6,47,43,0,0,
+permuted,5,100,10,5,26,64,0,0,
+random,5,100,92,77,8,0,1,1,
