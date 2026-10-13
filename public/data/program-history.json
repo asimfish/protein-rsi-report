@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
   "study_version": "program-history-4",
-  "source_updated_utc": "2026-10-12T23:16:49.744028+00:00",
-  "generated_utc": "2026-10-12T23:16:54.860887+00:00",
+  "source_updated_utc": "2026-10-13T03:37:21.164671+00:00",
+  "generated_utc": "2026-10-13T03:37:58.815111+00:00",
   "status": "running",
   "stage": "search",
   "counts": {
-    "episodes_started": 1116,
-    "episodes_completed": 1114,
+    "episodes_started": 2191,
+    "episodes_completed": 2190,
     "episodes_failed": 1,
-    "unresolved_episodes": 1,
-    "known_label_queries": 178240,
-    "model_requests_started": 164,
-    "model_requests_completed": 113,
-    "model_requests_failed": 51,
-    "model_requests_unsettled": 0,
-    "known_tokens": 229023,
-    "unknown_token_records": 51
+    "unresolved_episodes": 0,
+    "known_label_queries": 350400,
+    "model_requests_started": 318,
+    "model_requests_completed": 168,
+    "model_requests_failed": 149,
+    "model_requests_unsettled": 1,
+    "known_tokens": 345108,
+    "unknown_token_records": 149
   },
   "budget": {
     "episodes": 11591,
@@ -26,7 +26,7 @@
   },
   "execution": {
     "active": true,
-    "checked_utc": "2026-10-12T23:16:54.860887+00:00"
+    "checked_utc": "2026-10-13T03:37:58.815111+00:00"
   },
   "prior_runs": [
     {
