@@ -1,0 +1,6 @@
+reference,delta_nAUBC,ci95_low,ci95_high,p_holm,delta_normalized_Best_at_160,terminal_ci95_low,terminal_ci95_high,passes_conditions
+extreme,0.0,0.0,0.0,1.0,0.0,0.0,0.0,False
+none,0.0,0.0,0.0,1.0,0.0,0.0,0.0,False
+permuted,0.0,0.0,0.0,1.0,0.0,0.0,0.0,False
+random,-2.090600239622864e-05,-0.009478592207607656,0.009205354317792866,1.0,-0.004931960058346981,-0.022591189600344185,0.0021173398334306173,False
+initial,0.0,0.0,0.0,1.0,0.0,0.0,0.0,False
