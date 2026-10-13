@@ -6,6 +6,8 @@
 
 公开报告：https://asimfish.github.io/protein-rsi-report/ 。研究背景、动机与数学定义见[研究论证](https://asimfish.github.io/protein-rsi-report/story.html)。
 
+研究说明文档：[如何将 RSI 应用于蛋白实验设计](https://asimfish.github.io/protein-rsi-report/guide.html)。包含问题定义、RSI 使用方式、八项相关工作、系统设计与验证边界；支持章节导航、方法图和 [Markdown 下载](public/downloads/protein-rsi-guide.md)。研究状态按文中日期记录。
+
 ## 本地查看
 
 Node.js 24：`npm test`、`npm run build`。运行`npm run preview`后访问`http://127.0.0.1:8765`。

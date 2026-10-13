@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 760" role="img" aria-labelledby="title desc">
+<title id="title">蛋白 RSI：选样、策略搜索与改进器自修改</title>
+<desc id="desc">匿名经验进入改进器，生成候选策略，由固定核心配对回放和独立筛选。有效策略选择下一批变体，按预算获取实测标签，形成新经验。虚线元层表示待验证设计：改进器提出自身修改，经独立子搜索评价，通过后成为下一代改进器。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#227662"/></marker><marker id="meta-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#916c29"/></marker></defs>
+<style>text{font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172b35}.label{font-size:17px;font-weight:600;text-anchor:middle}.sub{font-size:14px;fill:#596c73;text-anchor:middle}.heading{font-size:16px;font-weight:650}.node{fill:#f1f6f2;stroke:#b8cec1;stroke-width:1.5}.edge{fill:none;stroke:#227662;stroke-width:2;marker-end:url(#arrow)}.meta{fill:none;stroke:#916c29;stroke-width:2;stroke-dasharray:6 5;marker-end:url(#meta-arrow)}.meta-node{fill:#fbf6e9;stroke:#c9b98f;stroke-width:1.5;stroke-dasharray:6 4}</style>
+<rect width="880" height="760" fill="#fff" rx="10"/>
+<text x="35" y="36" class="heading">策略层 · 在固定规则下搜索可执行的选样方法</text>
+<g><rect x="35" y="70" width="220" height="70" rx="8" class="node"/><text x="145" y="100" class="label">已完成的匿名经验</text><text x="145" y="122" class="sub">成功、失败与上下文</text></g>
+<g><rect x="310" y="70" width="260" height="70" rx="8" class="node"/><text x="440" y="100" class="label">改进器 I</text><text x="440" y="122" class="sub">P 选父代 · R 检索 · G 生成</text></g>
+<g><rect x="625" y="70" width="220" height="70" rx="8" class="node"/><text x="735" y="111" class="label">候选策略程序</text></g>
+<g><rect x="625" y="230" width="220" height="80" rx="8" class="node"/><text x="735" y="263" class="label">固定评价核心</text><text x="735" y="287" class="sub">配对回放与独立筛选</text></g>
+<g><rect x="625" y="390" width="220" height="70" rx="8" class="node"/><text x="735" y="431" class="label">保留有效策略</text></g>
+<g><rect x="310" y="390" width="260" height="70" rx="8" class="node"/><text x="440" y="420" class="label">选择下一批变体</text><text x="440" y="443" class="sub">每轮 16 个，累计 8 轮</text></g>
+<g><rect x="35" y="390" width="220" height="70" rx="8" class="node"/><text x="145" y="420" class="label">按预算获得实测标签</text><text x="145" y="443" class="sub">更新本次回放的观测</text></g>
+<path d="M255 105H310" class="edge"/><path d="M570 105H625" class="edge"/><path d="M735 140V230" class="edge"/><path d="M735 310V390" class="edge"/><path d="M625 425H570" class="edge"/><path d="M310 425H255" class="edge"/>
+<path d="M145 390V140" class="edge"/><text x="225" y="278" class="sub">新增实测反馈</text>
+<path d="M625 270H400V185H195V140" class="edge"/><text x="480" y="255" class="sub">评价记录回流</text>
+<rect x="25" y="510" width="830" height="225" rx="12" fill="#fffcf5" stroke="#e7dcc5"/>
+<text x="45" y="543" class="heading">元层 · 待实现并验证的改进器自修改</text>
+<g><rect x="45" y="575" width="220" height="70" rx="8" class="meta-node"/><text x="155" y="605" class="label">改进器 I（同上）</text><text x="155" y="628" class="sub">参与提出自身修改</text></g>
+<g><rect x="330" y="575" width="220" height="70" rx="8" class="meta-node"/><text x="440" y="605" class="label">候选改进器</text><text x="440" y="628" class="sub">首版每次只修改 R / G / P 之一</text></g>
+<g><rect x="615" y="575" width="220" height="70" rx="8" class="meta-node"/><text x="725" y="605" class="label">固定元评价</text><text x="725" y="628" class="sub">独立、等预算的受控子搜索</text></g>
+<path d="M265 610H330" class="meta"/><path d="M550 610H615" class="meta"/><path d="M725 645V702H155V645" class="meta"/><text x="440" y="689" class="sub">通过后成为下一代，并参与后续改进</text>
+</svg>
