@@ -1,8 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
 import {executionView,stageView,confirmationView} from '../public/dashboard-state.js';
-const sample=()=>JSON.parse(readFileSync(new URL('../public/data/program-history.json',import.meta.url)));
+// Artificial state fixtures must not depend on the phase of a live experiment.
+const sample=()=>({status:'running',stage:'confirmation',
+ source_updated_utc:'2026-10-13T01:00:00Z',
+ execution:{active:true,checked_utc:'2026-10-13T01:00:00Z'},
+ counts:{episodes_started:440,episodes_completed:440,episodes_failed:0}});
 const now=Date.parse('2026-10-13T01:00:00Z');
 test('Paused records remain paused when counters are old but process is recently confirmed stopped',()=>{
  const p=sample();p.status='paused';p.stage='fixed_development';p.source_updated_utc='2026-10-12T10:00:00Z';p.execution.checked_utc=new Date(now).toISOString();p.execution.active=false;
