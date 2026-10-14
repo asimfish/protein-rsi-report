@@ -1,17 +1,17 @@
 {
   "version": "state-conditional-edit-8",
-  "generated_utc": "2026-10-14T10:16:05.700795+00:00",
+  "generated_utc": "2026-10-14T10:18:09.385535+00:00",
   "progress": {
     "status": "running",
     "stage": "diagnosis",
     "max_replays": 364,
-    "completed_replays": 231,
-    "allocated_replays": 232,
+    "completed_replays": 250,
+    "allocated_replays": 251,
     "failed_replays": 0,
     "unsettled_cost_records": 1,
-    "paid_label_queries": 36960,
+    "paid_label_queries": 40000,
     "provider_requests": 0,
-    "updated": 1791972963.694283,
+    "updated": 1791973083.961523,
     "scientific_support": false
   },
   "execution_active": true,
