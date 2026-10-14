@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Protein RSI · 状态条件编辑验证</title><link rel="stylesheet" href="dashboard.css">
+<style>.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0}.flow div{padding:18px;border:1px solid #dce2df;background:#f4f7f4;border-radius:6px}.flow b{display:block;margin-bottom:9px}.flow p{font-size:13px;margin:0}.metrics{display:flex;gap:28px;flex-wrap:wrap}.metrics strong{display:block;font-size:30px;font-variant-numeric:tabular-nums}.metrics span{font-size:13px;color:#65747b}@media(max-width:700px){.flow{grid-template-columns:1fr 1fr}.metrics{gap:18px}}@media(max-width:420px){.flow{grid-template-columns:1fr}}</style>
+<script type="module" src="state-edits.js"></script></head>
+<body><header><nav aria-label="主要导航"><a class="brand" href="index.html">Protein RSI</a><a href="composition.html">前一轮完整结果</a><a href="final.html">正式比较</a><a href="https://protein-rsi-study-20261002.colttait034.chatgpt.site/slides.html">考核展示 ↗</a></nav>
+<div class="eyebrow">STATE-CONDITIONAL POLICY EDITS / STAGE A</div><h1>何时修改，修改哪条分支？</h1>
+<p class="muted">通过相同已测前缀的配对回放，检验决策前状态是否能帮助识别有益修改。完整机制诊断后公布分数；RSI 与改进器自修改仍需分别验证。</p></header>
+<main class="workspace"><section><h2>实验进度</h2><p id="status">读取公开快照……</p>
+<div class="metrics"><div><strong id="completed">—</strong><span>完成回放 / 364</span></div><div><strong id="queries">—</strong><span>已结算逻辑标签</span></div><div><strong id="failures">—</strong><span>失败回放</span></div><div><strong id="requests">—</strong><span>模型 API 请求</span></div></div><p class="small" id="time"></p></section>
+<section><h2>机制与评价</h2><div class="flow" aria-label="从共同前缀到独立诊断的四步流程">
+<div><b>1 · 共同已测前缀</b><p>父、子策略独立重新查询相同初始化及前缀，各自完成 160 次查询。</p></div>
+<div><b>2 · 决策前诊断</b><p>保存停滞、预测误差与经验覆盖；收益预测先于分叉后的新标签。</p></div>
+<div><b>3 · 条件分支编辑</b><p>仅在条件满足时切换到 mixed epistasis / EI；默认 MLP / UCB 全局选样保留。</p></div>
+<div><b>4 · 完整配对反馈</b><p>报告 ΔnAUBC、终点和实际行为差异；允许保留父代，不直接部署。</p></div></div>
+<p>数据为 GB1 历史实测 fitness 景观回放。每次 32 个初始化，8 轮各 16 个变体，共 160 次查询。4 次工程 sanity；20 个新训练初始化、20 个新机制诊断初始化，每初始化 9 回放。阶段 A 360 回放、57,600 标签，含 sanity 总计 364 回放、58,240 标签。CPU 每进程两线程，单回放串行，模型 API 0；TrpB4 不进行性能测试。</p>
+<div class="table-wrap"><table class="results-matrix"><thead><tr><th>比较器</th><th>输入与训练</th><th>选择规则</th></tr></thead><tbody>
+<tr><td>分组配对均值</td><td>编辑 × 时刻，8 个组</td><td rowspan="3">预测均值为正且证据覆盖时选择编辑；否则保留父代</td></tr>
+<tr><td>整回放平均诊断</td><td>沿用 v7 架构适配四个编辑，57 维；新回放只用训练父代总体均值</td></tr>
+<tr><td>决策前状态</td><td>16 维岭回归；按初始化交叉验证与 bootstrap；未见父代或超出状态范围记未知</td></tr>
+</tbody></table></div>
+<p>候选从第 3 或第 6 轮开始；停滞 ≥ 2，或停滞 ≥ 2 且上一批 nRMSE ≥ 1、经验 2σ 覆盖率 ≤ 0.5。两类条件分别配全局及局部候选池。四种编辑、两个时刻均实测，不只评价预测排名靠前者。</p>
+<p><a href="downloads/state-a-experiment-plan.md" download>阶段 A 冻结实验协议</a> · <a href="downloads/rsi-mechanism-plan-20261014.md">完整系统改进方案</a></p></section>
+<section><h2>选择规则的实测表现</h2><p id="result-note">等待完整机制诊断结束。训练和未完成诊断不用于公布性能结论。</p>
+<div class="table-wrap"><table class="results-matrix"><thead><tr><th>选择规则</th><th>初始化数</th><th>nAUBC ↑</th><th>归一化 Best@160 ↑</th><th>不修改 / 40</th></tr></thead><tbody id="methods"></tbody></table></div>
+<div class="table-wrap"><table class="results-matrix"><thead><tr><th>状态估计选择器的对照</th><th>ΔnAUBC [95% CI]</th><th>Δ终点 [95% CI]</th></tr></thead><tbody id="comparisons"></tbody></table></div>
+<p class="small">选择器结果复用完整候选矩阵中事前选中的实测回放，不是新运行的完整 RSI 系统。两个时刻在每初始化内平均，再按初始化配对重采样；探索性比较未作正式多重检验。</p></section>
+<section><h2>收益估计与证据覆盖</h2><div class="table-wrap"><table class="results-matrix"><thead><tr><th>估计器</th><th>特征数</th><th>支持比例</th><th>支持集 RMSE ↓</th><th>共同支持集 RMSE ↓</th><th>收益符号准确率</th></tr></thead><tbody id="estimators"></tbody></table></div>
+<p class="small">比较误差时同时报告支持比例和共同支持集。均值 bootstrap 区间不表示单次收益保证，区间校准尚未建立。</p></section>
+<section><h2>编辑收益与实际行为</h2><div class="table-wrap"><table class="results-matrix"><thead><tr><th>起始轮次</th><th>条件 / 池</th><th>ΔnAUBC [95% CI]</th><th>Δ终点 [95% CI]</th><th>行为改变的回放 / 20</th><th>触发轮次</th></tr></thead><tbody id="effects"></tbody></table></div>
+<p class="small">条件触发和候选集合改变只证明编辑执行，不证明收益。所有初始化来自同一个蛋白景观。</p><p id="downloads"></p></section>
+<section><h2>后续证据要求</h2><p>阶段 B 比较等预算随机编辑、平均诊断收益估计、状态收益估计及策略档案的多代搜索。阶段 C 冻结全部策略后，与 P0、P3、人工 P7、ALDE DNN 和 SSMuLA 对照确认。阶段 D 再接入真实 Qwen 提案，并以相同初始策略、历史及预算检验改进器自身产生改进的能力。后三阶段尚未启动。</p></section></main>
+<footer>原正式负结果与考核入口保留。独立工程评审及 fresh 环境见证采用同模型家族、provisional；工程正确性不替代科学证据。</footer></body></html>
