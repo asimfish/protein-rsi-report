@@ -1,17 +1,17 @@
 {
   "version": "state-conditional-edit-8",
-  "generated_utc": "2026-10-14T09:53:44.643017+00:00",
+  "generated_utc": "2026-10-14T09:56:17.751323+00:00",
   "progress": {
     "status": "running",
     "stage": "training",
     "max_replays": 364,
-    "completed_replays": 21,
-    "allocated_replays": 22,
+    "completed_replays": 45,
+    "allocated_replays": 46,
     "failed_replays": 0,
     "unsettled_cost_records": 1,
-    "paid_label_queries": 3360,
+    "paid_label_queries": 7200,
     "provider_requests": 0,
-    "updated": 1791971622.9127731,
+    "updated": 1791971775.0141537,
     "scientific_support": false
   },
   "execution_active": true,
