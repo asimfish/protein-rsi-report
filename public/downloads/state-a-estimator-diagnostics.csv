@@ -1,0 +1,4 @@
+estimator,feature_count,ridge,supported,total,support_fraction,rmse,mae,positive_sign_accuracy,mean_within_state_spearman,rank_evaluable_states,positive_recall_at_1,recall_evaluable_states,interval_target,calibration_established
+group,8,0.0,160,160,1.0,0.009971910202219141,0.004843622080216469,0.31875,0.15996120085315338,17,0.5555555555555556,9,conditional_mean_effect,False
+pooled,57,100.0,160,160,1.0,0.00994254582526393,0.004567279615530386,0.11875,0.15996120085315338,17,0.5555555555555556,9,conditional_mean_effect,False
+state,16,100.0,148,160,0.925,0.010113938354051843,0.004814955758055619,0.16891891891891891,0.23314643884156958,15,0.5,9,conditional_mean_effect,False
