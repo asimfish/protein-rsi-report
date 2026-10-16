@@ -1,0 +1,22 @@
+{
+  "version": "factorial-edit-9",
+  "generated_utc": "2026-10-16T13:24:19.001469+00:00",
+  "progress": {
+    "status": "running",
+    "stage": "training",
+    "max_replays": 924,
+    "completed_replays": 4,
+    "allocated_replays": 5,
+    "failed_replays": 0,
+    "unsettled_cost_records": 1,
+    "paid_label_queries": 640,
+    "provider_requests": 0,
+    "updated": 1792157057.5257304,
+    "scientific_support": false
+  },
+  "execution_active": true,
+  "result": null,
+  "effects": [],
+  "scientific_support": false,
+  "meta_improver_supported": false
+}
