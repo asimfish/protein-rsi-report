@@ -1,17 +1,17 @@
 {
   "version": "factorial-edit-9",
-  "generated_utc": "2026-10-16T13:25:53.800990+00:00",
+  "generated_utc": "2026-10-16T13:27:58.524926+00:00",
   "progress": {
     "status": "running",
     "stage": "training",
     "max_replays": 924,
-    "completed_replays": 22,
-    "allocated_replays": 23,
+    "completed_replays": 46,
+    "allocated_replays": 47,
     "failed_replays": 0,
     "unsettled_cost_records": 1,
-    "paid_label_queries": 3520,
+    "paid_label_queries": 7360,
     "provider_requests": 0,
-    "updated": 1792157150.2367465,
+    "updated": 1792157274.2131183,
     "scientific_support": false
   },
   "execution_active": true,
