@@ -1,17 +1,17 @@
 {
   "version": "factorial-edit-9",
-  "generated_utc": "2026-10-16T14:20:05.597201+00:00",
+  "generated_utc": "2026-10-16T14:22:10.964636+00:00",
   "progress": {
     "status": "running",
     "stage": "diagnosis",
     "max_replays": 924,
-    "completed_replays": 637,
-    "allocated_replays": 638,
+    "completed_replays": 660,
+    "allocated_replays": 661,
     "failed_replays": 0,
     "unsettled_cost_records": 1,
-    "paid_label_queries": 101920,
+    "paid_label_queries": 105600,
     "provider_requests": 0,
-    "updated": 1792160403.9466019,
+    "updated": 1792160526.5888975,
     "scientific_support": false
   },
   "execution_active": true,
