@@ -1,0 +1,7 @@
+method,n_initializations,mean_nAUBC,mean_normalized_best,no_edit_decisions,no_edit_count_type,decisions,independent_selector_replays
+parent,20,0.613700090693154,0.8319348801325637,40,actual_decision,40,False
+uniform_expected,20,0.611151167521051,0.8299104206894532,3.3333333333333335,expectation,40,False
+group,20,0.6173178779100674,0.8592815345457684,0,actual_decision,40,False
+supported_group,20,0.6166999854651749,0.8600585588651158,2,actual_decision,40,False
+additive,20,0.6217776431574343,0.8565968617481877,2,actual_decision,40,False
+interaction,20,0.6217776431574343,0.8565968617481877,2,actual_decision,40,False
