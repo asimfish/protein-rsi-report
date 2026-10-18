@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
-  "generated_utc": "2026-10-18T05:42:33.966242+00:00",
+  "generated_utc": "2026-10-18T09:56:24.327436+00:00",
   "study_version": "online-system-6",
-  "source_updated_utc": "2026-10-18T05:41:10.019387+00:00",
+  "source_updated_utc": "2026-10-18T09:55:10.024001+00:00",
   "counts": {
-    "episodes_started": 3434,
-    "episodes_completed": 3433,
+    "episodes_started": 3501,
+    "episodes_completed": 3500,
     "episodes_failed": 0,
-    "known_label_queries": 549376,
-    "recorded_model_requests": 20240,
-    "model_responses_completed": 15563,
-    "model_attempts_failed": 4676,
+    "known_label_queries": 560144,
+    "recorded_model_requests": 20779,
+    "model_responses_completed": 16011,
+    "model_attempts_failed": 4767,
     "model_attempts_unsettled": 1
   },
   "execution": {
     "active": true,
-    "checked_utc": "2026-10-18T05:42:33.966242+00:00",
+    "checked_utc": "2026-10-18T09:56:24.327436+00:00",
     "note": "本机研究进程已核验；当前阶段：GB1正式评价。完整性能评价尚未完成。 计数含一次独立记录的无标签连接检查，其响应不进入科研历史。"
   },
   "scientific_support": false,
