@@ -2,7 +2,7 @@
   "schema_version": 1,
   "study_version": "program-history-4",
   "source_updated_utc": "2026-10-13T11:41:46.511036+00:00",
-  "generated_utc": "2026-10-23T11:28:31.698231+00:00",
+  "generated_utc": "2026-10-23T15:51:59.962249+00:00",
   "status": "completed",
   "stage": "completed",
   "counts": {
@@ -26,7 +26,7 @@
   },
   "execution": {
     "active": false,
-    "checked_utc": "2026-10-23T11:28:31.698231+00:00"
+    "checked_utc": "2026-10-23T15:51:59.962249+00:00"
   },
   "prior_runs": [
     {
