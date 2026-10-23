@@ -1,0 +1,22 @@
+{
+  "version": "edit-ranking-10",
+  "generated_utc": "2026-10-23T09:36:01.207045+00:00",
+  "progress": {
+    "status": "implementation_review",
+    "stage": "not_started",
+    "max_replays": 1844,
+    "completed_replays": 0,
+    "allocated_replays": 0,
+    "failed_replays": 0,
+    "unsettled_cost_records": 0,
+    "paid_label_queries": 0,
+    "provider_requests": 0,
+    "updated": null,
+    "scientific_support": false
+  },
+  "execution_active": false,
+  "result": null,
+  "effects": [],
+  "scientific_support": false,
+  "meta_improver_supported": false
+}
