@@ -1,0 +1,10 @@
+method,n_initializations,mean_nAUBC,mean_normalized_best,no_edit_decisions,no_edit_count_type,decisions,observed_matrix_selection_regret,independent_selector_replays,no_edit_fixed_parent,no_edit_uniform_expected_null,no_edit_no_supported_candidate,no_edit_no_positive_point_score,no_edit_no_positive_bootstrap_lower_bound
+parent,40,0.5864452181345452,0.767601540953244,80,actual_decision,80,0.08225818391269538,False,80,0,0,0,0
+uniform_expected,40,0.599403831363006,0.7943131623846342,6.666666666666667,expectation,80,0.06929957068423451,False,0,6.666666666666667,0,0,0
+group,40,0.6113109982022067,0.8087775452586184,0,actual_decision,80,0.057392403845033815,False,0,0,0,0,0
+supported_group,40,0.6089723896494736,0.8069425082781905,2,actual_decision,80,0.05973101239776688,False,0,0,2,0,0
+mse_basic,40,0.608209538321635,0.8048284991574384,2,actual_decision,80,0.06049386372560552,False,0,0,2,0,0
+mse_rich,40,0.608118167957628,0.807470281152629,3,actual_decision,80,0.060585234089612604,False,0,0,2,1,0
+rank_basic,40,0.6028124747330705,0.7933781135488966,2,actual_decision,80,0.06589092731417,False,0,0,2,0,0
+rank_rich,40,0.6044927750286062,0.8088244352207148,2,actual_decision,80,0.06421062701863436,False,0,0,2,0,0
+rank_rich_lcb,40,0.5939313910683215,0.7874869216732296,49,actual_decision,80,0.07477201097891904,False,0,0,2,0,47
