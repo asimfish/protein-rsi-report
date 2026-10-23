@@ -1,17 +1,17 @@
 {
   "version": "edit-ranking-10",
-  "generated_utc": "2026-10-23T10:47:23.257322+00:00",
+  "generated_utc": "2026-10-23T10:49:26.091510+00:00",
   "progress": {
     "status": "running",
     "stage": "training",
     "max_replays": 1844,
-    "completed_replays": 718,
-    "allocated_replays": 719,
+    "completed_replays": 740,
+    "allocated_replays": 741,
     "failed_replays": 0,
     "unsettled_cost_records": 1,
-    "paid_label_queries": 114880,
+    "paid_label_queries": 118400,
     "provider_requests": 0,
-    "updated": 1792752436.230768,
+    "updated": 1792752562.6981332,
     "scientific_support": false
   },
   "execution_active": true,
