@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_utc": "2026-10-24T21:57:10.270128+00:00",
+  "generated_utc": "2026-10-25T00:14:24.537125+00:00",
   "study_version": "online-system-6",
   "source_updated_utc": "2026-10-19T05:14:10.316614+00:00",
   "counts": {
@@ -15,7 +15,7 @@
   },
   "execution": {
     "active": false,
-    "checked_utc": "2026-10-24T21:57:10.270128+00:00",
+    "checked_utc": "2026-10-25T00:14:24.537125+00:00",
     "note": "本机未发现本版研究进程；保留全部消费和未完成请求，不以旧队列状态声称正在运行。 计数含一次独立记录的无标签连接检查，其响应不进入科研历史。"
   },
   "scientific_support": false,
